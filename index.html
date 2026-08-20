@@ -6,81 +6,37 @@
 <title>Privacy Policy - CloudNotes</title>
 <style>
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.7;
-    color: #222;
-    max-width: 800px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
     margin: 0 auto;
-    padding: 40px 20px 80px;
-    background: #ffffff;
+    padding: 32px 20px 64px;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
   }
-  h1 {
-    color: #1a1a1a;
-    font-size: 28px;
-    margin-bottom: 4px;
-  }
-  .updated {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
-  h2 {
-    color: #1a1a1a;
-    font-size: 20px;
-    margin-top: 36px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #4ECDC4;
-    padding-bottom: 6px;
-  }
-  p, li {
-    font-size: 15px;
-    color: #333;
-  }
-  ul {
-    padding-left: 22px;
-  }
-  li {
-    margin-bottom: 6px;
-  }
-  a {
-    color: #4CA1AF;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .contact-box {
-    background: #f5f9ff;
-    border-left: 4px solid #4ECDC4;
-    padding: 16px 20px;
-    border-radius: 8px;
-    margin-top: 12px;
-  }
-  footer {
-    margin-top: 50px;
-    font-size: 13px;
-    color: #999;
-    text-align: center;
-  }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 32px; color: #333; }
+  p, li { font-size: 15px; }
+  .updated { color: #777; font-size: 13px; margin-bottom: 24px; }
+  a { color: #4CA1AF; }
+  footer { margin-top: 48px; font-size: 13px; color: #999; text-align: center; }
 </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: August 11, 2026</p>
+<p class="updated">Last updated: August 20, 2026</p>
 
-<p>
-  This Privacy Policy describes how <strong>CloudNotes</strong> ("we", "our", or "the app")
-  collects, uses, and protects information when you use our mobile application.
-  By using CloudNotes, you agree to the collection and use of information in
-  accordance with this policy.
-</p>
+<p>This Privacy Policy describes how <strong>CloudNotes</strong> ("we", "our", or "the app")
+collects, uses, and protects information when you use our mobile application.
+By using CloudNotes, you agree to the collection and use of information in
+accordance with this policy.</p>
 
 <h2>1. Information We Collect</h2>
 <p>We collect the following types of information to provide and improve our services:</p>
 <ul>
   <li><strong>Account Information:</strong> When you sign in using Email/Password or Google Sign-In, we collect your name, email address, and profile picture (if provided by Google).</li>
-  <li><strong>User Content:</strong> Notes, titles, messages, images, and other content you create or upload within the app.</li>
+  <li><strong>User Content:</strong> Notes, titles, messages, images, and other content you create or upload within the app. Images you upload (including past papers) are stored using Cloudinary, our image hosting provider.</li>
   <li><strong>Usage Data:</strong> Information such as likes, interactions, and activity within the app (e.g., liking a Community Note).</li>
   <li><strong>Device Information:</strong> Basic technical information such as device type and app version, used for troubleshooting and performance purposes.</li>
 </ul>
@@ -90,38 +46,36 @@
   <li>To create and manage your account</li>
   <li>To let you create, save, edit, and share notes</li>
   <li>To enable community features such as public notes and likes</li>
+  <li>To let you upload and share past papers and other images within the app</li>
   <li>To authenticate you securely via Firebase Authentication and Google Sign-In</li>
   <li>To improve app performance, fix bugs, and enhance user experience</li>
 </ul>
 
 <h2>3. Data Storage and Security</h2>
-<p>
-  CloudNotes uses <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore,
-  and Firebase Storage) to securely store and manage your data. Firebase applies
-  industry-standard security practices, including encryption in transit, to protect
-  your information. Access to your private notes is restricted to your own account
-  through Firebase Security Rules.
-</p>
+<p>CloudNotes uses <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore,
+and Firebase Storage) to securely store and manage your data, and <strong>Cloudinary</strong>
+to host images you upload within the app. Both providers apply industry-standard
+security practices, including encryption in transit, to protect your information.
+Access to your private notes is restricted to your own account through Firebase
+Security Rules.</p>
 
 <h2>4. Sharing of Information</h2>
-<p>
-  We do not sell, rent, or trade your personal information to third parties.
-  Information may only be shared in the following circumstances:
-</p>
+<p>We do not sell, rent, or trade your personal information to third parties.
+Information may only be shared in the following circumstances:</p>
 <ul>
   <li>With Google Firebase, as our backend service provider, solely to operate the app</li>
-  <li>Content you choose to make public (e.g., posting in Community Notes) will be visible to other users of the app</li>
+  <li>With Cloudinary, as our image hosting provider, solely to store and deliver images you upload (e.g., past papers)</li>
+  <li>Content you choose to make public (e.g., posting in Community Notes, or past papers uploaded to a shared university/subject list) will be visible to other users of the app</li>
   <li>If required by law, legal process, or to protect the rights and safety of our users</li>
 </ul>
 
 <h2>5. Third-Party Services</h2>
-<p>
-  CloudNotes uses the following third-party service providers, which have their own
-  privacy policies governing the use of your information:
-</p>
+<p>CloudNotes uses the following third-party service providers, which have their own
+privacy policies governing the use of your information:</p>
 <ul>
-  <li>Google Firebase (Authentication, Firestore, Storage) — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
-  <li>Google Sign-In — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+  <li>Google Firebase (Authentication, Firestore, Storage) — <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li>Google Sign-In — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>Cloudinary (image hosting for uploaded images and past papers) — <a href="https://cloudinary.com/privacy">cloudinary.com/privacy</a></li>
 </ul>
 
 <h2>6. Your Rights and Choices</h2>
@@ -132,29 +86,21 @@
 </ul>
 
 <h2>7. Children's Privacy</h2>
-<p>
-  CloudNotes is not directed at children under the age of 13, and we do not
-  knowingly collect personal information from children under 13. If we become
-  aware that a child has provided us with personal information, we will take
-  steps to delete such information.
-</p>
+<p>CloudNotes is not directed at children under the age of 13, and we do not
+knowingly collect personal information from children under 13. If we become
+aware that a child has provided us with personal information, we will take
+steps to delete such information.</p>
 
 <h2>8. Changes to This Privacy Policy</h2>
-<p>
-  We may update this Privacy Policy from time to time. Any changes will be
-  posted on this page with an updated "Last updated" date. Continued use of
-  the app after changes constitutes acceptance of the updated policy.
-</p>
+<p>We may update this Privacy Policy from time to time. Any changes will be
+posted on this page with an updated "Last updated" date. Continued use of
+the app after changes constitutes acceptance of the updated policy.</p>
 
 <h2>9. Contact Us</h2>
 <p>If you have any questions or concerns about this Privacy Policy or your data, please contact us:</p>
-<div class="contact-box">
-  Email: <a href="mailto:mrafiqfp31@gmail.com">mrafiqfp31@gmail.com</a>
-</div>
+<p>Email: <a href="mailto:mrafiqfp31@gmail.com">mrafiqfp31@gmail.com</a></p>
 
-<footer>
-  &copy; 2026 CloudNotes. All rights reserved.
-</footer>
+<footer>&copy; 2026 CloudNotes. All rights reserved.</footer>
 
 </body>
 </html>
